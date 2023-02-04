@@ -15,5 +15,9 @@ app.use(taskRoutes);
 
 app.use(express.static(join(__dirname, '../client/dist')));
 
+app.get('/', (req, res) => {
+    app.use('/', express.static(__dirname + '../client/dist'));
+});
+
 app.listen(PORT)
 console.log(`se esta escuchando en el puerto ${PORT}`);
