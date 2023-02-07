@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import {dirname, join, path } from 'path';
+import path from 'path';
 import {fileURLToPath} from 'url';
 import { PORT } from './config.js';
 import taskRoutes from './routes/tasks.routes.js';
