@@ -35,21 +35,6 @@ export const createTask = async (req,res) => {
     }
 }
 
-export const createUser = async (req,res) => {
-
-    try {
-        const {title, password} = req.body
-        const [result] = await pool.query('INSERT INTO users (title, password) VALUES (?, ?)', [title, password])
-        res.json({
-            id: result.insertId,
-            title,
-            password
-        })
-    } catch (error) {
-        return res.status(500).json({ message: error.message });
-    }
-}
-
 export const updateTask = async (req,res) => {
 
     try {

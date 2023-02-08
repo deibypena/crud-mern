@@ -3,7 +3,6 @@ import Nav from './components/Nav'
 import NotFoundPage from './pages/NotFoundPage'
 import TasksForm from './pages/TasksForm'
 import TasksPage from './pages/TasksPage'
-import Login from './pages/Login'
 import { TaskContextProvider } from './context/TaskContext'
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
         <TaskContextProvider>
           <Routes>
             <Route path="/" element={<TasksPage/>} />
-            <Route path="/login" element={<Login/>} />
             <Route path="/new" element={<TasksForm/>} />
             <Route path="/edit/:id" element={<TasksForm/>} />
             <Route path="*" element={<NotFoundPage/>} />
