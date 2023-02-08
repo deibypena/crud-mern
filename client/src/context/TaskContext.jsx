@@ -37,9 +37,9 @@ export const TaskContextProvider = ({ children }) => {
         }
     }
 
-    const createUser = async (user) => {
+    const createUser = async (task) => {
         try {
-            const response = await createUserRequest(user)
+            const response = await createUserRequest(task)
             console.log(response)
           } catch (error) {
             console.error(error)
