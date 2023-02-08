@@ -14,7 +14,7 @@ function Login() {
           navigate("/")
         }}
       >
-      {({handleChange, handleSubmit, isSubmitting}) => (
+      {({handleSubmit, isSubmitting}) => (
         <Form onSubmit={handleSubmit} className="bg-slate-100 rounded-md p-6 w-full max-w-xl flex flex-col mx-auto">
           <label className='text-xl font-semibold mb-2'>Title</label>
           <input className='rounded-md p-2 border border-zinc-400 mb-6' type="text" name='title' placeholder='aqui va el titulo' />
